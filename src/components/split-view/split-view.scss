@@ -1,0 +1,25 @@
+.SplitView {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+
+  &__left-zone {
+    overflow: auto;
+  }
+
+  &__right-zone {
+    flex-grow: 1;
+  }
+
+  &__divider {
+    width: 8px;
+    margin: 0 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      cursor: col-resize;
+    }
+  }
+}
